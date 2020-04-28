@@ -19,8 +19,13 @@
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
+    "@types/d3": "^5.7.2",
+    "angular-d3-tree": "^1.0.2",
+    "d3": "^5.16.0",
     "rxjs": "~6.5.4",
+    "tree-model": "^1.0.7",
     "tslib": "^1.10.0",
+    "vega": "^5.10.1",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

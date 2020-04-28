@@ -1,0 +1,23 @@
+<div class="container">
+
+    <p><b>
+      D3.js - Three
+    </b></p>
+  
+    <div class="svgContainer"></div>
+  
+    <p>Status: <span id='status'>Loaded</span></p>
+  
+    <button
+      *ngIf="btnPauseVisible"
+      (click)="btnPauseClick($event)">
+      Pause
+    </button>
+  
+    <button
+      *ngIf="btnStepVisible"
+      (click)="btnStepClick($event)">
+      Step
+    </button>
+  
+  </div>

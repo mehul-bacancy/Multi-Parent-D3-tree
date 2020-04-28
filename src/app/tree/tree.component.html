@@ -1,0 +1,33 @@
+<header>
+    <div id="navbar" class="container-fluid" style="background-color: #4fc3f7;">
+      <div class="container nav-fill w-100">
+        <nav class="navbar navbar-expand-md navbar-light" role="navigation">
+          <button class="navbar-toggler" (click)="toogleNavbar()" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent" [ngClass]="{'show': navbarOpen}">
+            <ul class="navbar-nav nav-fill w-100">
+              <li class="nav-item">
+                <a [routerLink]="['/tree/d3']" routerLinkActive="router-link-active" role="button"
+                  class="btn btn-default">D3</a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/tree/vega']" routerLinkActive="router-link-active"
+                  role="button" class="btn btn-default">Vega</a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/tree/multi-parent-d3']" routerLinkActive="router-link-active" role="button"
+                  class="btn btn-default">Multi-Parent</a>
+              </li>
+              <li>
+                <a [routerLink]="['/tree/radial']" routerLinkActive="router-link-active" role="button"
+                class="btn btn-default">Radial</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+<router-outlet></router-outlet>
